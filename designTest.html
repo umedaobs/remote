@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>OBS Remote</title>
+  </head>
+  <body>
+    <section id="main" style="width:90%; margin:0 auto;">
+    <h1>OBS Web Controller - <span id="time"></span></h1>
+    <h2>Controll</h2>
+    
+     <div class="form-group">
+    <label for="address">OBS Address</label>
+    <input type="text" id="address" class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password">
+  </div>
+
+  <button id="connect" class="btn btn-success">Connect</button><button id="disconnect" class="btn btn-danger">Disconnect</button>
+    <div id="controller_list"></div>
+
+    <h2>Scene List</h2>
+    <div id="scene_list"></div>
+
+    <h2>Transition List</h2>
+    <div id="transition_list"></div>
+
+    <h2>Audio List</h2>
+    <div id="audio_list"></div>
+</section>
+  </body>
+</html>
